@@ -35,12 +35,15 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   if (hamburger && drawer) {
-    hamburger.addEventListener('click', () => {
+    hamburger.addEventListener('click', e => {
+      e.stopPropagation();
+      hamburger.classList.toggle('open');
       drawer.classList.toggle('open');
     });
     // Tutup drawer kalau klik di luar
     document.addEventListener('click', e => {
-      if (!drawer.contains(e.target) && e.target !== hamburger) {
+      if (!drawer.contains(e.target) && !hamburger.contains(e.target)) {
+        hamburger.classList.remove('open');
         drawer.classList.remove('open');
       }
     });
@@ -183,13 +186,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   // ─── 10. PAGE TRANSITION (masuk halaman) ────────────────────
+  document.body.style.transition = 'opacity 0.4s ease';
   document.body.style.opacity = '0';
-  document.body.style.transition = 'opacity 0.5s ease';
-  requestAnimationFrame(() => {
-    requestAnimationFrame(() => {
-      document.body.style.opacity = '1';
-    });
-  });
+
+  // Pastikan body selalu kembali visible & bisa diklik
+  function showBody() {
+    document.body.style.opacity = '1';
+    document.body.style.pointerEvents = '';
+  }
+
+  // Fallback berlapis agar tidak nyangkut di HP
+  window.addEventListener('load', showBody);
+  setTimeout(showBody, 600);
+  requestAnimationFrame(() => { requestAnimationFrame(showBody); });
 
   // Transisi keluar saat klik link antar halaman
   document.querySelectorAll('a[href]').forEach(link => {
@@ -204,7 +213,8 @@ document.addEventListener('DOMContentLoaded', () => {
       link.addEventListener('click', e => {
         e.preventDefault();
         document.body.style.opacity = '0';
-        setTimeout(() => { window.location.href = href; }, 450);
+        document.body.style.pointerEvents = 'none';
+        setTimeout(() => { window.location.href = href; }, 400);
       });
     }
   });
