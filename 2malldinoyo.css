@@ -259,6 +259,14 @@
 
 .halaman3-mdc .item:hover .keterangan { transform: translateY(0); }
 
+.halaman4-mdc {
+  background: var(--cream);
+  padding: 4rem 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
 
 /* ======= RESPONSIVE ======= */
 @media (max-width: 768px) {
