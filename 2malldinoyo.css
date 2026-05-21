@@ -7,7 +7,7 @@
 /* ======= HALAMAN 1 : SPLIT HERO ======= */
 
 .halaman1-mdc {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: row;
 }
@@ -87,8 +87,7 @@
   border: 1px solid #e0ddd5;
   border-radius: 4px;
   overflow: hidden;
-  width: 100%;
-   max-width: 420px;
+  width: fit-content;
   margin-top: 0.5rem;
   background: white;
 }
