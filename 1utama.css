@@ -3,7 +3,7 @@
 
 /* ===== CSS VARIABLES ===== */
 :root {
-  --navy:       #0d1f5c;
+  --navy:       rgb(57, 40, 173);
   --navy-dark:  #07133a;
   --navy-mid:   #1a3080;
   --gold:       #C8860A;
