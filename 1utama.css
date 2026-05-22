@@ -4,13 +4,13 @@
 /* ===== CSS VARIABLES ===== */
 :root {
   --navy:       rgb(58, 122, 149);
-  --navy-dark:  rgb(32, 80, 102);
-  --navy-mid:   rgb(90, 155, 182);
-  --gold:       rgb(200, 158, 80);
-  --gold-light: rgb(224, 188, 120);
-  --gold-pale:  rgb(247, 242, 228);
-  --cream:      rgb(245, 250, 252);
-  --cream-dark: rgb(232, 242, 246);
+  --navy-dark:  rgb(21, 67, 90);
+  --navy-mid:   rgb(34, 95, 124);
+  --gold:       rgb(210, 140, 20);
+  --gold-light: rgb(240, 170, 50);
+  --gold-pale:  rgb(255, 240, 200);
+  --cream:      rgb(228, 242, 247);
+  --cream-dark: rgb(210, 230, 238);
   --white:      #ffffff;
   --gray-light: #f4f4f6;
   --text-dark:  #1a1a2e;
