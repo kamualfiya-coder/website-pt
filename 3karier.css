@@ -42,7 +42,7 @@
 }
 
 .karier-hero-sub {
-  font-size: 18px;
+  font-size: 14px;
   color: rgba(255,255,255,0.6);
   letter-spacing: 0.5px;
 }
@@ -88,7 +88,7 @@
 
 .lowongan-judul {
   font-family: var(--font-display);
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 600;
   color: var(--navy);
   margin-bottom: 0.5rem;
@@ -102,7 +102,7 @@
 }
 
 .lowongan-lokasi {
-  font-size: 15px;
+  font-size: 12px;
   color: #888;
 }
 
@@ -126,7 +126,7 @@
 }
 
 .deadline-label {
-  font-size: 13px;
+  font-size: 10px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   color: #999;
@@ -134,7 +134,7 @@
 
 .deadline-val {
   font-family: var(--font-display);
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 600;
   color: var(--navy);
 }
@@ -142,16 +142,16 @@
 .lowongan-deadline.tutup .deadline-val { color: var(--red-dark); }
 
 .lowongan-syarat {
-  font-size: 16px;
+  font-size: 13px;
   color: #555;
-  line-height: 1.9;
+  line-height: 1.8;
   padding-top: 0.75rem;
   border-top: 1px solid #f0ede7;
 }
 
 .lowongan-footer {
   margin-top: 1rem;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.5px;
   color: var(--gold);
@@ -161,11 +161,11 @@
 .badge {
   background: rgba(7,19,58,0.07);
   color: var(--navy);
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
-  padding: 4px 11px;
+  padding: 3px 9px;
   border-radius: 20px;
   border: 1px solid rgba(7,19,58,0.12);
 }
@@ -173,9 +173,9 @@
 .badge-buka {
   background: rgba(26,107,42,0.08);
   color: #1a6b2a;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 600;
-  padding: 4px 11px;
+  padding: 3px 9px;
   border-radius: 20px;
   border: 1px solid rgba(26,107,42,0.2);
 }
@@ -183,9 +183,9 @@
 .badge-tutup {
   background: rgba(139,26,26,0.07);
   color: var(--red-dark);
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 600;
-  padding: 4px 11px;
+  padding: 3px 9px;
   border-radius: 20px;
   border: 1px solid rgba(139,26,26,0.15);
 }
@@ -205,8 +205,8 @@
   gap: 0.5rem;
 }
 
-.kosong-icon { font-size: 48px; margin-bottom: 0.5rem; }
-.kosong p { font-size: 16px; line-height: 1.9; }
+.kosong-icon { font-size: 40px; margin-bottom: 0.5rem; }
+.kosong p { font-size: 14px; line-height: 1.8; }
 
 /* ======= RESPONSIVE ======= */
 @media (max-width: 768px) {
