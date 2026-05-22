@@ -3,14 +3,14 @@
 
 /* ===== CSS VARIABLES ===== */
 :root {
-  --navy:       rgb(58, 122, 149);
-  --navy-dark:  rgb(21, 67, 90);
-  --navy-mid:   rgb(34, 95, 124);
-  --gold:       rgb(210, 140, 20);
-  --gold-light: rgb(240, 170, 50);
-  --gold-pale:  rgb(255, 240, 200);
-  --cream:      rgb(228, 242, 247);
-  --cream-dark: rgb(210, 230, 238);
+  --navy:       rgb(80, 125, 170);
+  --navy-dark:  rgb(30, 60, 90);
+  --navy-mid:   rgb(52, 90, 130);
+  --gold:       rgb(210, 155, 30);
+  --gold-light: rgb(235, 185, 65);
+  --gold-pale:  rgb(255, 243, 210);
+  --cream:      rgb(245, 249, 252);
+  --cream-dark: rgb(235, 239, 242);
   --white:      #ffffff;
   --gray-light: #f4f4f6;
   --text-dark:  #1a1a2e;
